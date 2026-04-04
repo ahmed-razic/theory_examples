@@ -1,0 +1,15 @@
+#define functions
+
+
+set terminal qt 0
+set parametric
+set grid
+# set xrange[-3:3]
+set yrange[-1.5:1.5]
+set size ratio 1
+
+plot [0:2*pi] cos(t) + 1, sin(t) with lines, cos(t), sin(t) with lines 
+
+pause -1
+
+#EOF
