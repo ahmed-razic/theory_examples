@@ -1,0 +1,14 @@
+#define functions
+f1(x) = x**2
+f2(x) = x + 1
+
+set terminal qt 0
+set grid
+set xrange[-3:3]
+set yrange[-1:5]
+set size ratio 1
+plot f1(x) with lines, f2(x) with lines lc "red"
+
+pause -1
+
+#EOF
