@@ -1,0 +1,15 @@
+#define functions
+C(x) = 5.0/9.0*(x - 32)
+F(x) = x
+
+set terminal qt 0
+set grid
+set xrange[-100:100]
+set yrange[-100:100]
+set size ratio 1
+
+plot C(x) with lines, F(x) with lines
+
+pause -1
+
+#EOF
